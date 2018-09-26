@@ -1,4 +1,5 @@
 # ROBOTIC PLATFORM TO LEARN AND IMPLEMENT AI ALGORITHM
+---
 
 **Mentor:**
 
@@ -23,24 +24,17 @@ AprilTag Libraries
 
 #### 1. Image Processing
 
-i) Detection of the environment through camera and cropping out the region of interest:
-  First, an image is obtained through camera. Pixel value of corners of the environment is
-detected and region of interest is cropped using ROI function.
+i) Detection of the environment through overhead camera and cropping out the region of interest.
 
-
-ii) Detection of the obstacles in the environment:
-   The next step is to detect obstacles in the image which will be used along with the start
+ii) Detecting the obstacles in the environment which will be used along with the start
 and goal point to build a roadmap of the environment.
 
-
-iii) Converting the image into a 7X7 grid:
-  The image is converted into an nXn grid such that the obstacle properly fits in the small
-block.
+iii) Converting the image into an nXn grid such that the robot properly fits in the smallest block. 
 
 
 #### 2. The Robot
 
-A compact and robust robot was built with arduino uno as microcontroller and bluetooth (HC05) for wireless communication. Calibrated PID control was implemented for smooth trajectories.
+A compact and robust robot was built with arduino uno as microcontroller. It has Calibrated PID control for smooth trajectories. Bluetooth serial communication was implemented for wireless transfer of data from PC to the robot using BLuetooth module (HC05). It has april-tag attached on its top for realtime localization. 
 
 
 #### 3. Loacalization using April-Tag
